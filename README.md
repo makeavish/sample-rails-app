@@ -11,7 +11,11 @@ This is a ruby on rails sample application to demonstrate how to auto-instrument
     gem 'opentelemetry-instrumentation-all'
     ```
 
-* Start the application: `OTEL_EXPORTER=otlp OTEL_SERVICE_NAME=sampleRailsApp OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318 OTEL_RESOURCE_ATTRIBUTES=application=sparkapp rails server rails server`
+* Start the application: 
+
+    ```
+    OTEL_EXPORTER=otlp OTEL_SERVICE_NAME=sampleRailsApp OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318 OTEL_RESOURCE_ATTRIBUTES=application=sparkapp rails server
+    ```
 
     This runs the rails application at port 3000. Try accessing app at http://localhost:3000/
 
